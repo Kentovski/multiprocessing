@@ -18,7 +18,7 @@ def main():
     if input("Do you want to change max number of processes? Y / N") == "Y":
         max_processes = int(input("Enter max number of processes"))
     else:
-        with open(config.json) as f:
+        with open('config.json') as f:
             max_processes = json.load(f)['max_processes']
 
     src = input("Enter the source path: ")
